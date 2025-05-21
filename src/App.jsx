@@ -13,6 +13,7 @@ import "./ResetStyles.less";
 import Header from "./Components/Header";
 import Gallery from "./Components/Gallery";
 import SectionDiv from "./Components/Section";
+import HomePage from "./Pages/HomePage";
 import ProductCard from "./Components/ProductCard";
 import ProductListing from "./Components/ProductListing";
 import Footer from "./Components/Footer";
@@ -32,12 +33,14 @@ import Footer from "./Components/Footer";
 
 function App() {
 
-  const testLink = { text: 'Link de teste', href: 'www.google.com' }
+  // const testLink = { text: 'Link de teste', href: 'www.google.com' }
 
   return (
     <Container>
       <Header />
-      <SectionDiv title={'Title Text'} titleAlign={'center'} link={testLink} children={''} />
+
+      <HomePage />
+      {/* <SectionDiv title={'Coleções em destaque'} titleAlign={'center'} link={testLink} children={''} /> */}
 
       {/* <ProductCard image={''} name={"Teste de Produto"} price={250.500} priceDiscount={200} /> */}
       {/* <ProductListing products={data} /> */}

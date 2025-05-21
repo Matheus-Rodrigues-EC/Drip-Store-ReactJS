@@ -18,7 +18,7 @@ const Gallery = ({ images, Width, Height, Radius }) => {
             <Image
               className="custom-image"
               preview={false}
-              src={image.image}
+              src={image.src}
               width="auto"
               height="auto"
               style={{ objectFit: "cover" }}
@@ -37,6 +37,11 @@ const CarouselWrapper = styled.div`
   overflow: hidden;
   height: ${({ $height }) => $height || 'auto'};
 
+  .ant-carousel {
+    display: flex;
+    justify-content: center;
+  }
+
   .custom-carousel,
   .custom-carousel .slick-list,
   .custom-carousel .slick-track,
@@ -49,7 +54,7 @@ const CarouselWrapper = styled.div`
     display: flex !important;
     justify-content: center;
     align-items: center;
-    background-color: ${Colors.light_gray};
+    background-color: transparent;
   }
 
   .custom-image {

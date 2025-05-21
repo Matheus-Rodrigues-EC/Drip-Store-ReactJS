@@ -9,20 +9,19 @@ const SectionDiv = ({ title, titleAlign, link, children }) => {
 
   return (
     <Container>
-      <section>
-        <Row justify={(titleAlign === 'center' ? 'center' : 'start') || 'start'} >
-          <Typography.Title>{title}</Typography.Title>
-          {link?.text && 
-            <Typography.Link as={Link} to={`/${link?.href}`} className="linkSection">
-              {link?.text}
-            </Typography.Link>
-          }
-        </Row>
-        <Row>
+      <Row justify={(titleAlign === 'center' ? 'center' : 'start') || 'start'} >
+        <Typography.Title>{title}</Typography.Title>
+        {link?.text &&
+          <Typography.Link as={Link} to={`/${link?.href}`} className="linkSection">
+            {link?.text}
+          </Typography.Link>
+        }
+      </Row>
+      {children && (
+        <Row justify={'space-between'}>
           {children}
         </Row>
-      
-      </section>
+      )}
     </Container>
   )
 }
@@ -32,7 +31,7 @@ export default SectionDiv;
 const Container = styled.div`
   width: 100%;
   height: 100%;
+  margin-top: 25px;
   padding: 0 100px;
-  position: relative;
   box-sizing: border-box;
 `

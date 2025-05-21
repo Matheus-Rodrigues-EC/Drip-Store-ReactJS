@@ -7,6 +7,7 @@ import LogoHeader from '../assets/logo-header.svg'
 
 import * as Colors from "../Utils/Constants";
 import Logo from './Logo';
+import HomePage from "../Pages/HomePage";
 
 const onChange = key => {
   console.log(key);
@@ -16,7 +17,7 @@ const ItensNavigate = [
   {
     key: '1',
     label: 'Home',
-    children: 'Content of Tab Pane 1',
+    // children: <HomePage />,
   },
   {
     key: '2',
@@ -122,6 +123,6 @@ export default Header;
 const ContainerHeader = styled.div`
   width: 100%;
   height: 192px;
-  box-sizing: border-box;
   padding: 30px 100px;
+  box-sizing: border-box;
 `

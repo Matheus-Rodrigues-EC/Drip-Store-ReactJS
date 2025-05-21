@@ -71,7 +71,7 @@ export const Categories = {
   ]
 }
 
-export const Contact = {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+export const Contact = {
   title: 'Contato',
   informations: [
     {
@@ -84,3 +84,64 @@ export const Contact = {
     },
   ]
 }
+
+export const HomeSlide = [
+  { "src": "/home-slide-1.jpeg" },
+  { "src": "/home-slide-2.jpeg" },
+  { "src": "/home-slide-3.jpeg" },
+  { "src": "/home-slide-4.jpeg" },
+  { "src": "/home-slide-5.jpeg" },
+  { "src": "/home-slide-6.jpeg" },
+  { "src": "/home-slide-7.jpeg" },
+  { "src": "/home-slide-8.jpeg" },
+]
+
+export const FeaturedCollections = [
+  { "src": "/collection-1.png" },
+  { "src": "/collection-2.png" },
+  { "src": "/collection-3.png" },
+]
+
+export const TrendingProducts = [
+  {
+    name: "Nome do produto",
+    image: "/product-thumb-1.jpeg",
+    price: 200,
+    priceDiscount: 149.9
+  }, {
+    name: "Nome do produto",
+    image: "/product-thumb-2.jpeg",
+    price: 200,
+    priceDiscount: 149.9
+  }, {
+    name: "Nome do produto",
+    image: "/product-thumb-3.jpeg",
+    price: 200,
+    priceDiscount: 149.9
+  }, {
+    name: "Nome do produto",
+    image: "/product-thumb-4.jpeg",
+    price: 200,
+    priceDiscount: 149.9
+  }, {
+    name: "Nome do produto",
+    image: "/product-thumb-5.jpeg",
+    price: 200,
+    priceDiscount: 149.9
+  }, {
+    name: "Nome do produto",
+    image: "/product-thumb-1.jpeg",
+    price: 200,
+    priceDiscount: 149.9
+  }, {
+    name: "Nome do produto",
+    image: "/product-thumb-2.jpeg",
+    price: 200,
+    priceDiscount: 149.9
+  }, {
+    name: "Nome do produto",
+    image: "/product-thumb-3.jpeg",
+    price: 200,
+    priceDiscount: 149.9
+  },
+]
