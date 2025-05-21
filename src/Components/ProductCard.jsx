@@ -9,11 +9,16 @@ const ProductCard = ({image, name, price, priceDiscount}) => {
     <Container>
       <Row>
         <Col span={24}>
-          <Image width='100%' height={321} src={image} />
+          <Image
+            src={image}
+            preview={false}
+            width='100%'
+            height={321}
+          />
         </Col>
       </Row>
       <Row>
-        <Typography.Text>
+        <Typography.Text style={{ fontSize: 24}}>
           {name}
         </Typography.Text>
       </Row>
