@@ -19,14 +19,14 @@ const Header = () => {
     "/home": "1",
     "/produtos": "2",
     "/categorias": "3",
-    "/meus-pedidos": "4",
+    // "/meus-pedidos": "4",
   };
 
   const keyToPath = {
     "1": "/home",
     "2": "/produtos",
     "3": "/categorias",
-    "4": "/meus-pedidos",
+    // "4": "/meus-pedidos",
   };
 
   const currentKey = pathToKey[location.pathname] || "1"; // Default to '1' (home)

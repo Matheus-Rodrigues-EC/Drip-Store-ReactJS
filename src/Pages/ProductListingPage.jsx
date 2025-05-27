@@ -6,7 +6,6 @@ import * as Constants from "../Utils/Constants";
 import FilterGroup from "../Components/FilterGroup";
 import SectionDiv from "../Components/Section";
 import ProductListing from "../Components/ProductListing";
-import Footer from "../Components/Footer";
 
 
 const ProductListingPage = () => {
