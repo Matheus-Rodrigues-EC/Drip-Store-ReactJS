@@ -1,10 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import styled from "styled-components";
 import { Carousel, Image } from "antd";
 
 import * as Colors from '../Utils/Constants';
 
-const Gallery = ({ images, Width, Height, Radius }) => {
+const Gallery = ({ images, showThumbs, Width, Height, Radius }) => {
+  
   return (
     <CarouselWrapper $width={Width} $height={Height} $radius={Radius}>
       <Carousel

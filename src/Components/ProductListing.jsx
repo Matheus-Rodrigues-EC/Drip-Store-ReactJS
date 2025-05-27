@@ -16,7 +16,11 @@ const ProductListing = ({ products }) => {
         dataSource={products}
         renderItem={(item) => (
           <List.Item>
-            <ProductCard image={item.image} name={item.name} price={item.price} priceDiscount={item.priceDiscount}
+            <ProductCard
+              image={item.image} 
+              name={item.name} 
+              price={item.price} 
+              priceDiscount={item.priceDiscount}
             />
           </List.Item>
         )}

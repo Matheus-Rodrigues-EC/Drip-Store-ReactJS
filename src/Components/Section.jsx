@@ -1,19 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { Row, Col, Typography } from "antd";
+import { Row, Typography } from "antd";
+import { ArrowRightOutlined } from '@ant-design/icons';
 
 
 const SectionDiv = ({ title, titleAlign, link, children }) => {
+  const Navigate = useNavigate();
 
+  const goLink = (href) => {
+    Navigate(`${href}`);
+  };
 
   return (
     <Container>
-      <Row justify={(titleAlign === 'center' ? 'center' : 'start') || 'start'} >
+      <Row 
+        justify='space-between' 
+        align='middle'
+        style={{ paddingLeft: titleAlign === 'center' ? '35%' : '0'}}
+      >
         <Typography.Title>{title}</Typography.Title>
         {link?.text &&
-          <Typography.Link as={Link} to={`/${link?.href}`} className="linkSection">
-            {link?.text}
+          <Typography.Link onClick={() => goLink(link?.href)} >
+            {link?.text} <ArrowRightOutlined />
           </Typography.Link>
         }
       </Row>
@@ -32,6 +41,5 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   margin-top: 25px;
-  /* padding: 0 100px; */
   box-sizing: border-box;
 `

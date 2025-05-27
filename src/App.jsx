@@ -4,38 +4,15 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import styled from "styled-components";
 import "./ResetStyles.less";
 
-
-
-// import gallery1 from '../public/collection-1.png'
-// import gallery2 from '../public/collection-2.png'
-// import gallery3 from '../public/collection-3.png'
-
-import Header from "./Components/Header";
-import Gallery from "./Components/Gallery";
 import Layout from "./Components/Layout";
-import SectionDiv from "./Components/Section";
 import HomePage from "./Pages/HomePage";
-import ProductCard from "./Components/ProductCard";
-import ProductListing from "./Components/ProductListing";
-import Footer from "./Components/Footer";
 import ProductListingPage from "./Pages/ProductListingPage";
+import ProductViewPage from "./Pages/ProductViewPage";
 
-
-// const data = [
-//   {
-//     name: "Nome do produto 1",
-//     image: foto1,
-//     price: 200,
-//     priceDiscount: 149.9
-//   },
-// ]
-
-// const images = [{image: gallery1}, {image: gallery2}, {image: gallery3}, ]
-
+import ProductOptions from "./Components/ProductOptions";
+import BuyBox from "./Components/BuyBox";
 
 function App() {
-
-  // const testLink = { text: 'Link de teste', href: 'www.google.com' }
 
   return (
     <Container>
@@ -54,6 +31,7 @@ function App() {
           <Routes>
             <Route path="/home" element={<Layout children={<HomePage />} />} />
             <Route path="/produtos" element={<Layout children={<ProductListingPage />} />} />
+            <Route path="/categorias" element={<Layout children={<ProductViewPage />} />}/>
 
             {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
