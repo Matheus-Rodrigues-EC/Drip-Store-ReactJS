@@ -145,3 +145,31 @@ export const TrendingProducts = [
     priceDiscount: 149.9
   },
 ]
+
+export const FilterOptions = [
+  {id: 1, label: 'Menor preço'},
+  {id: 2, label: 'Maior preço'},
+]
+
+export const Marka = [
+  {label: "Adidas", value: "Adidas"},
+  {label: "Calenciaga", value: "Calenciaga"},
+  {label: "K-Swiss", value: "K-Swiss"},
+  {label: "Nike", value: "Nike"},
+  {label: "Puma", value: "Puma"},
+]
+export const Categoria = [
+  {label: "Esporte e Lazer", value: "Esporte e Lazer"},
+  {label: "Casual", value: "Casual"},
+  {label: "Utilitário", value: "Utilitario"},
+  {label: "Corrida", value: "Corrida"},
+]
+export const Genero = [
+  {label: "Masculino", value: "Masculino"},
+  {label: "Feminino", value: "Feminino"},
+  {label: "Unisex", value: "Unisex"},
+]
+export const Estado = [
+  {label: "Novo", value: "Novo"},
+  {label: "Usado", value: "Usado"},
+]

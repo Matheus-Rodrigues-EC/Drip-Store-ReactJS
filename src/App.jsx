@@ -12,11 +12,13 @@ import "./ResetStyles.less";
 
 import Header from "./Components/Header";
 import Gallery from "./Components/Gallery";
+import Layout from "./Components/Layout";
 import SectionDiv from "./Components/Section";
 import HomePage from "./Pages/HomePage";
 import ProductCard from "./Components/ProductCard";
 import ProductListing from "./Components/ProductListing";
 import Footer from "./Components/Footer";
+import ProductListingPage from "./Pages/ProductListingPage";
 
 
 // const data = [
@@ -37,9 +39,9 @@ function App() {
 
   return (
     <Container>
-      <Header />
+      {/* <Header /> */}
 
-      <HomePage />
+      {/* <HomePage /> */}
       {/* <SectionDiv title={'Coleções em destaque'} titleAlign={'center'} link={testLink} children={''} /> */}
 
       {/* <ProductCard image={''} name={"Teste de Produto"} price={250.500} priceDiscount={200} /> */}
@@ -48,12 +50,14 @@ function App() {
       {/* <Gallery images={images} Width={'750px'} Height={'750px'} Radius={'15px'} /> */}
 
       <>
-        {/* <BrowserRouter>
+        <BrowserRouter>
           <Routes>
+            <Route path="/home" element={<Layout children={<HomePage />} />} />
+            <Route path="/produtos" element={<Layout children={<ProductListingPage />} />} />
 
-          <Route path="*" element={<NotFound />} />
+            {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
-        </BrowserRouter> */}
+        </BrowserRouter>
       </>
 
     </Container>

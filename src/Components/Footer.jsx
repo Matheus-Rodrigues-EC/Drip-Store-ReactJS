@@ -57,11 +57,12 @@ export default Footer;
 const ContainerFooter = styled.div`
   width: 100%;
   height: 454px;
+  position: static;
   bottom: 0;
+  left: 0;
   padding: 1% 3% 0 3%;
   box-sizing: border-box;
-  background-color: #1f1f1f;
-  z-index: 9;
+  background-color: ${Constants.dark_gray};
 `
 const SocialMediaLogo = styled.img`
     width: fit-content;
